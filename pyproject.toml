@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avatar-preflight-lab"
+version = "0.1.0"
+description = "Offline, dependency-free declaration checks for experimental avatar pipelines"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[project.scripts]
+avatar-preflight = "avatar_plan.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["avatar_plan*"]
