@@ -43,7 +43,14 @@ Exit codes: `0` declarations valid; `1` blocked by checks; `2` unreadable/invali
 - Declared GPU memory comparison and a 30-second prototype clip limit.
 - Dependency check: generated audio needs a voice component; recorded audio does not.
 - Machine-readable blocked reasons and a human review plan.
-- Unit/CLI tests and a proposed GitHub Actions workflow.
+- Unit/CLI tests and a GitHub Actions test workflow.
+- Deterministic manifest fingerprints and value-free change review with `--compare`.
+- Strict duplicate-key rejection to avoid ambiguous JSON declarations.
+
+## Change review and contribution
+
+See [audit walkthrough](docs/AUDIT.md) for reproducible reports and comparison
+semantics, and [contributing](CONTRIBUTING.md) for architecture and starter tasks.
 
 ## Not implemented
 
