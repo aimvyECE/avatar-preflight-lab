@@ -45,6 +45,7 @@ Exit codes: `0` declarations valid; `1` blocked by checks; `2` unreadable/invali
 - Machine-readable blocked reasons and a human review plan.
 - Unit/CLI tests and a GitHub Actions test workflow.
 - Deterministic manifest fingerprints and value-free change review with `--compare`.
+- Conservative downstream review invalidation when a manifest changes ([walkthrough](docs/REVIEW_IMPACT.md)).
 - Strict duplicate-key rejection to avoid ambiguous JSON declarations.
 
 ## Change review and contribution

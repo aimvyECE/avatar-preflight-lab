@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "purpose": "personal",
+  "subject": {
+    "consent_record": "private/consent.txt",
+    "consent_reviewed": true,
+    "synthetic_disclosure": true
+  },
+  "media": {
+    "reference_video": "private/reference.mp4",
+    "audio": "private/second-synthetic-recording.wav",
+    "duration_seconds": 15,
+    "audio_origin": "recorded"
+  },
+  "runtime": {
+    "network_allowed": false,
+    "gpu_memory_gib": 8
+  },
+  "components": [
+    {
+      "role": "lipsync",
+      "name": "illustrative-adapter-not-implemented",
+      "revision": "example-revision-001",
+      "license_reviewed": true,
+      "commercial_use_allowed": false,
+      "model_path": "models/example.weights",
+      "tested_gpu_memory_gib": 8
+    }
+  ]
+}

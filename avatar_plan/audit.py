@@ -2,6 +2,7 @@
 import hashlib
 import json
 from .core import plan
+from .impact import review_impact
 
 
 def unique_object(pairs):
@@ -55,5 +56,6 @@ def audit(data, previous=None):
         result['comparison'] = {'previous_sha256': fingerprint(previous),
                                 'changed_paths': paths,
                                 'review_required': bool(paths),
-                                'previous_status': plan(previous)['status']}
+                                'previous_status': plan(previous)['status'],
+                                'review_impact': review_impact(paths)}
     return result
